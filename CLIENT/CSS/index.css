@@ -1,0 +1,58 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #222;
+    overflow: hidden;
+    -webkit-user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  .btn-group button, div.btn-group button.close {
+    -webkit-app-region: no-drag;
+    border: 0px solid transparent; /* Green border */
+    background-color: transparent;
+    color: white; /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: right;
+    align-content: right;
+    border-radius: 0px;
+  }
+
+  .bg-custom{
+    background-color: #333;
+  }
+
+  .btn-group button.min:hover, .btn-group button.max:hover {
+    background-color: #222;
+  }
+
+  .btn-group button.exit:hover {
+    background-color: rgb(255, 29, 29);
+  }
+
+  .chr {
+    min-height: 4px;
+    background-image: linear-gradient(to top left, #c62626, #ff5050);
+    border-radius: 5px;
+}
+
+div.frame{
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    background-image: linear-gradient(to top left, #c62626, #ff5050);
+    color: white;
+    font-weight: 100;
+}
+
+
+
+canvas#main-game {
+  width: 100%;
+  height: 100%;
+}
+
